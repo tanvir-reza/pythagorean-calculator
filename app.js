@@ -12,7 +12,6 @@ form.addEventListener('submit',(e)=>{
         while (c < limit)
         {
              
-            // Now loop on j from 1 to i-1
             for(let n = 1; n < m; ++n)
             {
                 a = m * m - n * n;
@@ -22,7 +21,25 @@ form.addEventListener('submit',(e)=>{
                 if (c > limit)
                     break;
      
-                    document.write(a + " " + b + " " + c + "</br>");  
+                // document.write(a + " " + b + " " + c + "</br>");
+
+                 
+               document.querySelector('#triangle').classList.add('off');
+               document.querySelector('#valo').classList.add('off');
+                document.querySelector('#result').classList.add('on');
+                var h = document.querySelector('#res');
+                h.insertAdjacentHTML('beforeend', '{(');
+                h.insertAdjacentHTML('beforeend', a);
+                h.insertAdjacentHTML('beforeend', ',');
+                h.insertAdjacentHTML('beforeend', b);
+                h.insertAdjacentHTML('beforeend', ',');
+                h.insertAdjacentHTML('beforeend', c);
+                h.insertAdjacentHTML('beforeend', ')}');
+
+                h.insertAdjacentHTML('beforeend' ,'<br>')
+                console.log(a, b ,c);
+                
+
             }
             m++;
         }
