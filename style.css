@@ -17,11 +17,40 @@
 .submit{
     margin-left: 353px;
 }
-.triangle {
+#triangle {
     border-bottom: 202px solid #ff00ea;
     border-left: 0px solid transparent;
     border-right: 235px solid transparent;
     width: 0;
     margin-top: 33px;
+    display: block;
     margin-left: 300px;
-   }
+}
+#valo{
+    display: block;
+    margin-left: 224px;
+}
+.off{
+    display: none !important;
+}
+.on{
+    display: block !important;
+}
+#result{
+    background-color: #dac4c4;
+    height: auto;
+    padding: 10px;
+    width: 420px;
+    margin-left: 229px;
+    margin-top: 63px;
+    display: none;
+}
+.res_head{
+    font-size: 34px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: fantasy;
+}
+#res{
+    text-align: center;
+}
