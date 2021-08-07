@@ -70,7 +70,8 @@ form.addEventListener('submit',(e)=>{
                document.querySelector('#error').classList.add('on');
         document.querySelector('#error').innerHTML="Error <br> Enter Numerical Value !!";
     }
-    
+    input1.value ="";
+    input2.value ="";
 })
 
 
